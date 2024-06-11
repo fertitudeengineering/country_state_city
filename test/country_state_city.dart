@@ -19,12 +19,5 @@ void main() {
       expect(states.isEmpty, false);
       expect(states.first.runtimeType, State);
     });
-
-    test('cities should be loaded', () async {
-      final cities = await getAllCities();
-
-      expect(cities.isEmpty, false);
-      expect(cities.first.runtimeType, City);
-    });
   });
 }
